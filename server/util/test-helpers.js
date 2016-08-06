@@ -3,7 +3,7 @@ import mockgoose from 'mockgoose';
 
 export function connectDB(t, done) {
   mockgoose(mongoose).then(() => {
-    mongoose.createConnection('mongodb://admin:iloveGod4ever@ds145245.mlab.com:45245/heroku_q3b2tpgf', err => {
+    mongoose.createConnection('mongodb://localhost:27017/fantasy-football', err => {
       if (err) t.fail('Unable to connect to fantasy-football database');
       done();
     });

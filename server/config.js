@@ -1,5 +1,5 @@
 const config = {
-  mongoURL: process.env.MONGO_URL || 'mongodb://admin:iloveGod4ever@ds145245.mlab.com:45245/heroku_q3b2tpgf',
+  mongoURL: process.env.MONGO_URL || 'mongodb://localhost:27017/fantasy-football',
   port: process.env.PORT || 8000,
 };
 
