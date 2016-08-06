@@ -14,7 +14,6 @@ function KeeperListItem(props) {
         </Link>
       </h3>
       <p className={styles['keeper-name']}><FormattedMessage id="by" /> {props.keeper.name}</p>
-      <p className={styles['keeper-desc']}>{props.keeper.date}</p>
       <p className={styles['keeper-action']}><a href="#" onClick={props.onDelete}><FormattedMessage id="deleteKeeper" /></a></p>
       <hr className={styles.divider} />
     </div>

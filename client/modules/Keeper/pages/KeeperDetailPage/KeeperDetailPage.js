@@ -15,9 +15,9 @@ import { getKeeper } from '../../KeeperReducer';
 export function KeeperDetailPage(props) {
   return (
     <div>
-      <Helmet title={props.keeper.title} />
+      <Helmet title={props.keeper.round} />
       <div className={`${styles['single-keeper']} ${styles['keeper-detail']}`}>
-        <h3 className={styles['keeper-round']}>{props.keeper.title}</h3>
+        <h3 className={styles['keeper-round']}>{props.keeper.round}</h3>
         <p className={styles['keeper-name']}><FormattedMessage id="by" /> {props.keeper.name}</p>
       </div>
     </div>

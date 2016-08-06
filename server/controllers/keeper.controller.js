@@ -1,6 +1,5 @@
 import Keeper from '../models/keeper';
 import cuid from 'cuid';
-import slug from 'limax';
 import sanitizeHtml from 'sanitize-html';
 
 /**
@@ -25,7 +24,6 @@ export function getKeepers(req, res) {
  * @returns void
  */
 export function addKeeper(req, res) {
-  console.log("KEEPER REQUEST: ", req.body);
   if (!req.body.keeper.name || !req.body.keeper.round) {
     res.status(403).end();
   }
